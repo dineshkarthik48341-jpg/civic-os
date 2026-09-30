@@ -1,0 +1,123 @@
+{
+  "type": "FeatureCollection",
+  "name": "Satellite SAR & SODA-A Remote Sensing Flood Inundation Masks",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "flood-mask-step1-lakdikapul",
+      "properties": {
+        "id": "flood-mask-step1-lakdikapul",
+        "scenario_step": 1,
+        "name": "Lakdikapul Underpass Cloudburst Ponding",
+        "satellite_source": "Sentinel-1 SAR / SODA-A Urban Footprint Filter",
+        "inundation_class": "Flash Ponding",
+        "mean_depth_m": 0.42,
+        "peak_depth_m": 0.65,
+        "confidence_score": 0.88,
+        "hazard_level": "WARNING",
+        "area_hectares": 14.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.4610, 17.4060],
+            [78.4665, 17.4045],
+            [78.4675, 17.4075],
+            [78.4640, 17.4105],
+            [78.4600, 17.4085],
+            [78.4610, 17.4060]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "flood-mask-step2-khairatabad-corridor",
+      "properties": {
+        "id": "flood-mask-step2-khairatabad-corridor",
+        "scenario_step": 2,
+        "name": "Khairatabad - Raj Bhavan SAR Inundation Zone",
+        "satellite_source": "SatEdit Dual-Pol SAR Change Detection (Sentinel-1 Synthetic)",
+        "inundation_class": "Severe Inundation / Corridors Severed",
+        "mean_depth_m": 0.78,
+        "peak_depth_m": 1.25,
+        "confidence_score": 0.96,
+        "hazard_level": "EMERGENCY_CRITICAL",
+        "area_hectares": 48.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.4550, 17.4040],
+            [78.4670, 17.4030],
+            [78.4690, 17.4100],
+            [78.4630, 17.4175],
+            [78.4540, 17.4225],
+            [78.4505, 17.4180],
+            [78.4530, 17.4110],
+            [78.4550, 17.4040]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "flood-mask-step2-musi-river",
+      "properties": {
+        "id": "flood-mask-step2-musi-river",
+        "scenario_step": 2,
+        "name": "Musi River Riparian Flash Inundation",
+        "satellite_source": "SatEdit Dual-Pol SAR Change Detection",
+        "inundation_class": "Riverine Surge Overflow",
+        "mean_depth_m": 0.95,
+        "peak_depth_m": 1.60,
+        "confidence_score": 0.94,
+        "hazard_level": "EMERGENCY_CRITICAL",
+        "area_hectares": 62.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.4690, 17.3710],
+            [78.4870, 17.3740],
+            [78.4960, 17.3810],
+            [78.4930, 17.3850],
+            [78.4780, 17.3820],
+            [78.4680, 17.3760],
+            [78.4690, 17.3710]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "soda-a-dense-infrastructure-01",
+      "properties": {
+        "id": "soda-a-dense-infrastructure-01",
+        "scenario_step": 99,
+        "name": "SODA-A Extracted Dense Building Cluster - Lakdikapul Commercial",
+        "satellite_source": "Hugging Face SODA-A High-Res Optical Mask",
+        "inundation_class": "Urban Structural Mask",
+        "building_count": 84,
+        "hazard_level": "BUFFER_VULNERABLE",
+        "area_hectares": 8.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.4615, 17.4035],
+            [78.4645, 17.4030],
+            [78.4655, 17.4050],
+            [78.4625, 17.4060],
+            [78.4615, 17.4035]
+          ]
+        ]
+      }
+    }
+  ]
+}

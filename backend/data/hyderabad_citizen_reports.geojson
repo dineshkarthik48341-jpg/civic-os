@@ -1,0 +1,79 @@
+{
+  "type": "FeatureCollection",
+  "name": "Geolocated Citizen Emergency Distress Reports",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "report-001",
+      "properties": {
+        "id": "report-001",
+        "scenario_step": 1,
+        "caller_name": "Ramesh Kumar (Citizen)",
+        "phone_masked": "+91 98480 ••••42",
+        "location_desc": "Lakdikapul Underpass Ramp Entrance",
+        "category": "Vehicle Trapped",
+        "water_depth_est": "0.75m (Window level)",
+        "urgency": "HIGH",
+        "status": "DISPATCHED",
+        "timestamp_relative": "T+18 min",
+        "notes": "Sedan stalled in rising water, 2 occupants inside. Police PCR #14 diverted."
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4642, 17.4068] }
+    },
+    {
+      "type": "Feature",
+      "id": "report-002",
+      "properties": {
+        "id": "report-002",
+        "scenario_step": 1,
+        "caller_name": "Dr. Priya Rao (NIMS Resident)",
+        "phone_masked": "+91 94401 ••••88",
+        "location_desc": "Khairatabad Anand Nagar Flyover Base",
+        "category": "Ambulance Obstructed",
+        "water_depth_est": "0.60m",
+        "urgency": "CRITICAL",
+        "status": "REROUTED",
+        "timestamp_relative": "T+26 min",
+        "notes": "Cardiac trauma unit unable to cross submerged culvert. Awaiting green corridor detour."
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4585, 17.4132] }
+    },
+    {
+      "type": "Feature",
+      "id": "report-003",
+      "properties": {
+        "id": "report-003",
+        "scenario_step": 2,
+        "caller_name": "Afzalgunj Traders Assoc.",
+        "phone_masked": "+91 99890 ••••11",
+        "location_desc": "Musi South Embankment near Osmania Hospital",
+        "category": "Basement Flooding",
+        "water_depth_est": "1.20m",
+        "urgency": "HIGH",
+        "status": "PENDING_PUMP",
+        "timestamp_relative": "T+48 min",
+        "notes": "Nala reverse flow threatening hospital low tension substation. Dewatering team needed."
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4778, 17.3772] }
+    },
+    {
+      "type": "Feature",
+      "id": "report-004",
+      "properties": {
+        "id": "report-004",
+        "scenario_step": 2,
+        "caller_name": "Sunitha Reddy (Pedestrian)",
+        "phone_masked": "+91 97002 ••••56",
+        "location_desc": "Lakdikapul Metro Concourse Gate 2",
+        "category": "Stranded Commuters",
+        "water_depth_est": "0.50m on sidewalk",
+        "urgency": "MODERATE",
+        "status": "SHELTERED",
+        "timestamp_relative": "T+55 min",
+        "notes": "~120 passengers sheltered in elevated concourse. Road access severed."
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4658, 17.4050] }
+    }
+  ]
+}

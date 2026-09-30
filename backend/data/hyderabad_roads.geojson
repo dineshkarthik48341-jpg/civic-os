@@ -1,0 +1,151 @@
+{
+  "type": "FeatureCollection",
+  "name": "Hyderabad Road Arteries & Transit Corridors",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "road-corridor-01",
+      "properties": {
+        "id": "road-corridor-01",
+        "name": "Raj Bhavan Road & Lakdikapul Underpass Arterial",
+        "type": "Primary Arterial Corridor",
+        "lanes": 6,
+        "speed_limit_kmh": 50,
+        "is_primary_ambulance_route": true,
+        "drainage_culvert_id": "DRAIN-14A",
+        "normal_depth_m": 0.05,
+        "step1_depth_m": 0.38,
+        "step2_depth_m": 0.85,
+        "critical_asset_access": "Direct Access to NIMS Apex Trauma & Lakdikapul Metro",
+        "elevation_profile": "Underpass Basin Depression (512m)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [78.4680, 17.4010],
+          [78.4650, 17.4055],
+          [78.4625, 17.4085],
+          [78.4590, 17.4125],
+          [78.4560, 17.4170],
+          [78.4535, 17.4205],
+          [78.4520, 17.4230]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road-corridor-02",
+      "properties": {
+        "id": "road-corridor-02",
+        "name": "Musi River Bank Arterial (Afzalgunj - OGH Section)",
+        "type": "Urban Riverfront Collector",
+        "lanes": 4,
+        "speed_limit_kmh": 40,
+        "is_primary_ambulance_route": false,
+        "drainage_culvert_id": "DRAIN-09D",
+        "normal_depth_m": 0.08,
+        "step1_depth_m": 0.45,
+        "step2_depth_m": 1.15,
+        "critical_asset_access": "Osmania General Hospital South Emergency Gate",
+        "elevation_profile": "River Basin Flat (504m)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [78.4710, 17.3735],
+          [78.4755, 17.3760],
+          [78.4795, 17.3780],
+          [78.4845, 17.3795],
+          [78.4910, 17.3820]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road-corridor-03",
+      "properties": {
+        "id": "road-corridor-03",
+        "name": "Tank Bund Scenic Arterial (Hussain Sagar Corridor)",
+        "type": "Primary Arterial Corridor",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "is_primary_ambulance_route": false,
+        "drainage_culvert_id": "DRAIN-15F",
+        "normal_depth_m": 0.02,
+        "step1_depth_m": 0.12,
+        "step2_depth_m": 0.22,
+        "critical_asset_access": "Connects Hyderabad Central to Secunderabad",
+        "elevation_profile": "Embankment Ridge (518m)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [78.4710, 17.4080],
+          [78.4750, 17.4130],
+          [78.4785, 17.4190],
+          [78.4810, 17.4260],
+          [78.4835, 17.4320]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road-corridor-04",
+      "properties": {
+        "id": "road-corridor-04",
+        "name": "North-West Elevated Safe Relief Bypass (Masab Tank - Road 1 Banjara - Punjagutta)",
+        "type": "Elevated Flyover & High-Ridge Bypass",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "is_primary_ambulance_route": true,
+        "drainage_culvert_id": "DRAIN-07E",
+        "normal_depth_m": 0.0,
+        "step1_depth_m": 0.02,
+        "step2_depth_m": 0.04,
+        "critical_asset_access": "Designated Safe Ambulance Corridor to Care Hospitals & NIMS",
+        "elevation_profile": "Elevated Ridge / High Incline (545m)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [78.4680, 17.4010],
+          [78.4550, 17.4005],
+          [78.4480, 17.4050],
+          [78.4465, 17.4120],
+          [78.4485, 17.4147],
+          [78.4480, 17.4180],
+          [78.4495, 17.4215],
+          [78.4520, 17.4230]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road-corridor-05",
+      "properties": {
+        "id": "road-corridor-05",
+        "name": "Inner Link (Nampally Station to Assembly Hub)",
+        "type": "Secondary Collector",
+        "lanes": 4,
+        "speed_limit_kmh": 40,
+        "is_primary_ambulance_route": false,
+        "drainage_culvert_id": "DRAIN-14A",
+        "normal_depth_m": 0.04,
+        "step1_depth_m": 0.25,
+        "step2_depth_m": 0.48,
+        "critical_asset_access": "Nampally Railway Station to Central Government Hub",
+        "elevation_profile": "Moderate Slope (518m)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [78.4715, 17.3920],
+          [78.4720, 17.3960],
+          [78.4710, 17.3995],
+          [78.4680, 17.4010]
+        ]
+      }
+    }
+  ]
+}

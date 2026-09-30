@@ -1,0 +1,690 @@
+{
+  "type": "FeatureCollection",
+  "name": "Hyderabad Multi-Sector Critical Infrastructure & Lifelines",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "util-sub-01",
+      "properties": {
+        "id": "util-sub-01",
+        "substation_id": "SUB-01",
+        "name": "Khairatabad 33kV Substation",
+        "sector": "utilities",
+        "sector_label": "Critical Utilities & Lifelines",
+        "sub_category": "power_substation",
+        "voltage_kv": 33,
+        "step0": { "status": "ONLINE", "grid_load_pct": 52 },
+        "step1": { "status": "ONLINE", "grid_load_pct": 74 },
+        "step2": { "status": "TRIPPED", "grid_load_pct": 0, "failure_reason": "Basement Transformer Inundation (>0.6m)" },
+        "dependent_subscribers": 42000,
+        "dependent_assets": ["Khairatabad Metro Station", "Raj Bhavan Street Signals", "Anand Nagar Residential Grid"],
+        "action_required": "Deploy Emergency Mobile Generator Crew (1500kVA)",
+        "elevation_m": 515.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4590, 17.4125] }
+    },
+    {
+      "type": "Feature",
+      "id": "util-sub-02",
+      "properties": {
+        "id": "util-sub-02",
+        "substation_id": "SUB-02",
+        "name": "Mint Compound Substation",
+        "sector": "utilities",
+        "sector_label": "Critical Utilities & Lifelines",
+        "sub_category": "power_substation",
+        "voltage_kv": 33,
+        "step0": { "status": "ONLINE", "grid_load_pct": 48 },
+        "step1": { "status": "COMPROMISED", "grid_load_pct": 86, "failure_reason": "Perimeter Water Level 0.35m" },
+        "step2": { "status": "TRIPPED", "grid_load_pct": 0, "failure_reason": "Secondary Busbar Short-Circuit from Ingress" },
+        "dependent_subscribers": 35000,
+        "dependent_assets": ["Lakdikapul Metro Station", "Secretariat Emergency Backup", "Saifabad Traffic Grid"],
+        "action_required": "Dispatch 1200-GPM dewatering pump unit & isolated feeder bypass",
+        "elevation_m": 512.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4670, 17.4085] }
+    },
+    {
+      "type": "Feature",
+      "id": "util-sub-03",
+      "properties": {
+        "id": "util-sub-03",
+        "substation_id": "SUB-03",
+        "name": "Erragadda 132kV Substation",
+        "sector": "utilities",
+        "sector_label": "Critical Utilities & Lifelines",
+        "sub_category": "power_substation",
+        "voltage_kv": 132,
+        "step0": { "status": "ONLINE", "grid_load_pct": 58 },
+        "step1": { "status": "ONLINE", "grid_load_pct": 65 },
+        "step2": { "status": "ONLINE", "grid_load_pct": 72 },
+        "dependent_subscribers": 120000,
+        "dependent_assets": ["North-West Industrial Grid", "Sanath Nagar Feeder"],
+        "action_required": "Routine remote SCADA telemetry check",
+        "elevation_m": 535.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4350, 17.4520] }
+    },
+    {
+      "type": "Feature",
+      "id": "util-sub-04",
+      "properties": {
+        "id": "util-sub-04",
+        "substation_id": "SUB-04",
+        "name": "Madhapur 220kV Extra High Voltage Substation",
+        "sector": "utilities",
+        "sector_label": "Critical Utilities & Lifelines",
+        "sub_category": "power_substation",
+        "voltage_kv": 220,
+        "step0": { "status": "ONLINE", "grid_load_pct": 62 },
+        "step1": { "status": "ONLINE", "grid_load_pct": 68 },
+        "step2": { "status": "ONLINE", "grid_load_pct": 74 },
+        "dependent_subscribers": 280000,
+        "dependent_assets": ["HITEC City IT Corridor", "Financial District"],
+        "action_required": "Normal operational standby",
+        "elevation_m": 560.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.3820, 17.4480] }
+    },
+    {
+      "type": "Feature",
+      "id": "util-wtp-01",
+      "properties": {
+        "id": "util-wtp-01",
+        "station_id": "WTP-01",
+        "name": "Asif Nagar Water Filter Beds",
+        "sector": "utilities",
+        "sector_label": "Critical Utilities & Lifelines",
+        "sub_category": "water_treatment",
+        "capacity_mld": 90,
+        "step0": { "current_load_pct": 65, "operating_status": "NORMAL" },
+        "step1": { "current_load_pct": 88, "operating_status": "BACKFLOW_RISK" },
+        "step2": { "current_load_pct": 98, "operating_status": "BACKFLOW_RISK" },
+        "dependent_assets": ["Central Hyderabad Potable Water Grid"],
+        "action_required": "Activate auxiliary backwash pumps to prevent sediment siltation",
+        "elevation_m": 522.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4480, 17.3910] }
+    },
+    {
+      "type": "Feature",
+      "id": "util-wtp-02",
+      "properties": {
+        "id": "util-wtp-02",
+        "station_id": "WTP-02",
+        "name": "Amberpet Sewage Treatment Plant (STP)",
+        "sector": "utilities",
+        "sector_label": "Critical Utilities & Lifelines",
+        "sub_category": "water_treatment",
+        "capacity_mld": 339,
+        "step0": { "current_load_pct": 55, "operating_status": "NORMAL" },
+        "step1": { "current_load_pct": 78, "operating_status": "NORMAL" },
+        "step2": { "current_load_pct": 94, "operating_status": "BACKFLOW_RISK" },
+        "dependent_assets": ["Musi River Ecological Sluice"],
+        "action_required": "Switch to emergency overflow bypass basin",
+        "elevation_m": 498.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.5190, 17.3880] }
+    },
+    {
+      "type": "Feature",
+      "id": "util-pump-01",
+      "properties": {
+        "id": "util-pump-01",
+        "station_id": "PUMP-01",
+        "name": "Hussain Sagar Sluice Gates & Heavy Dewatering Station",
+        "sector": "utilities",
+        "sector_label": "Critical Utilities & Lifelines",
+        "sub_category": "stormwater_pump",
+        "capacity_mld": 450,
+        "step0": { "current_load_pct": 40, "operating_status": "NORMAL" },
+        "step1": { "current_load_pct": 82, "operating_status": "BACKFLOW_RISK" },
+        "step2": { "current_load_pct": 99, "operating_status": "SUBMERGED" },
+        "dependent_assets": ["Buddha Bhavan Drainage Outfall", "Tank Bund Road"],
+        "action_required": "Full throttle 4x 1500-GPM diesel flood pumps engaged",
+        "elevation_m": 513.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4815, 17.4245] }
+    },
+    {
+      "type": "Feature",
+      "id": "util-pump-02",
+      "properties": {
+        "id": "util-pump-02",
+        "station_id": "PUMP-02",
+        "name": "Mir Alam Tank Pumping Station",
+        "sector": "utilities",
+        "sector_label": "Critical Utilities & Lifelines",
+        "sub_category": "stormwater_pump",
+        "capacity_mld": 120,
+        "step0": { "current_load_pct": 35, "operating_status": "NORMAL" },
+        "step1": { "current_load_pct": 65, "operating_status": "NORMAL" },
+        "step2": { "current_load_pct": 80, "operating_status": "NORMAL" },
+        "dependent_assets": ["South Hyderabad Storm Discharge"],
+        "action_required": "Monitor weir level gauge",
+        "elevation_m": 508.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4450, 17.3520] }
+    },
+    {
+      "type": "Feature",
+      "id": "util-tel-01",
+      "properties": {
+        "id": "util-tel-01",
+        "tower_id": "TEL-01",
+        "name": "BSNL Central Exchange Khairatabad & Cellular Relay",
+        "sector": "utilities",
+        "sector_label": "Critical Utilities & Lifelines",
+        "sub_category": "cell_tower",
+        "coverage_radius_m": 2500,
+        "battery_backup_hours": 4.5,
+        "step0": { "operational_status": "ONLINE" },
+        "step1": { "operational_status": "ONLINE" },
+        "step2": { "operational_status": "ON_BATTERY", "cause": "Sub-01 Tripped, Running on Diesel Genset" },
+        "dependent_assets": ["Ward 14 Emergency SMS Geofence Gateway", "Police TETRA Relay"],
+        "action_required": "Dispatch refuel tanker for backup generator",
+        "elevation_m": 516.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4610, 17.4110] }
+    },
+    {
+      "type": "Feature",
+      "id": "util-tel-02",
+      "properties": {
+        "id": "util-tel-02",
+        "tower_id": "TEL-02",
+        "name": "Cyberabad Telecom Tower Hub",
+        "sector": "utilities",
+        "sector_label": "Critical Utilities & Lifelines",
+        "sub_category": "cell_tower",
+        "coverage_radius_m": 3500,
+        "battery_backup_hours": 8.0,
+        "step0": { "operational_status": "ONLINE" },
+        "step1": { "operational_status": "ONLINE" },
+        "step2": { "operational_status": "ONLINE" },
+        "dependent_assets": ["Cyberabad IT Police Network"],
+        "action_required": "Normal operational standby",
+        "elevation_m": 558.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.3810, 17.4420] }
+    },
+    {
+      "type": "Feature",
+      "id": "util-tel-03",
+      "properties": {
+        "id": "util-tel-03",
+        "tower_id": "TEL-03",
+        "name": "Nampally Cellular Relay Tower",
+        "sector": "utilities",
+        "sector_label": "Critical Utilities & Lifelines",
+        "sub_category": "cell_tower",
+        "coverage_radius_m": 1800,
+        "battery_backup_hours": 3.0,
+        "step0": { "operational_status": "ONLINE" },
+        "step1": { "operational_status": "ONLINE" },
+        "step2": { "operational_status": "ON_BATTERY" },
+        "dependent_assets": ["Railway Station Public Cellular Coverage"],
+        "action_required": "Standby battery monitoring",
+        "elevation_m": 519.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4720, 17.3930] }
+    },
+    {
+      "type": "Feature",
+      "id": "sec-fire-01",
+      "properties": {
+        "id": "sec-fire-01",
+        "station_id": "FIRE-01",
+        "name": "Secretariat Fire & Disaster Rescue Station",
+        "sector": "emergency_services",
+        "sector_label": "Tactical Emergency Services & Public Safety",
+        "sub_category": "fire_station",
+        "available_appliances": 6,
+        "step0": { "route_accessibility": "CLEAR" },
+        "step1": { "route_accessibility": "DELAYED" },
+        "step2": { "route_accessibility": "BLOCKED", "cause": "Saifabad Road Submerged (0.7m)" },
+        "action_required": "Divert heavy rescue tender via Masab Tank Flyover",
+        "elevation_m": 518.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4710, 17.4095] }
+    },
+    {
+      "type": "Feature",
+      "id": "sec-fire-02",
+      "properties": {
+        "id": "sec-fire-02",
+        "station_id": "FIRE-02",
+        "name": "Gowliguda Central Fire Station",
+        "sector": "emergency_services",
+        "sector_label": "Tactical Emergency Services & Public Safety",
+        "sub_category": "fire_station",
+        "available_appliances": 10,
+        "step0": { "route_accessibility": "CLEAR" },
+        "step1": { "route_accessibility": "DELAYED" },
+        "step2": { "route_accessibility": "DELAYED", "cause": "Musi South Embankment Congestion" },
+        "action_required": "Deploy inflatable boat rescue squad to Afzalgunj",
+        "elevation_m": 506.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4780, 17.3770] }
+    },
+    {
+      "type": "Feature",
+      "id": "sec-fire-03",
+      "properties": {
+        "id": "sec-fire-03",
+        "station_id": "FIRE-03",
+        "name": "Madhapur Fire Station",
+        "sector": "emergency_services",
+        "sector_label": "Tactical Emergency Services & Public Safety",
+        "sub_category": "fire_station",
+        "available_appliances": 5,
+        "step0": { "route_accessibility": "CLEAR" },
+        "step1": { "route_accessibility": "CLEAR" },
+        "step2": { "route_accessibility": "CLEAR" },
+        "action_required": "Standby mutual aid squad ready",
+        "elevation_m": 552.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.3870, 17.4470] }
+    },
+    {
+      "type": "Feature",
+      "id": "sec-fire-04",
+      "properties": {
+        "id": "sec-fire-04",
+        "station_id": "FIRE-04",
+        "name": "Secunderabad Divisional Fire Station",
+        "sector": "emergency_services",
+        "sector_label": "Tactical Emergency Services & Public Safety",
+        "sub_category": "fire_station",
+        "available_appliances": 7,
+        "step0": { "route_accessibility": "CLEAR" },
+        "step1": { "route_accessibility": "CLEAR" },
+        "step2": { "route_accessibility": "CLEAR" },
+        "action_required": "Standby mutual aid squad ready",
+        "elevation_m": 536.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4980, 17.4390] }
+    },
+    {
+      "type": "Feature",
+      "id": "sec-pol-01",
+      "properties": {
+        "id": "sec-pol-01",
+        "station_id": "POL-01",
+        "name": "Saifabad Police Station",
+        "sector": "emergency_services",
+        "sector_label": "Tactical Emergency Services & Public Safety",
+        "sub_category": "police_station",
+        "assigned_patrols": 14,
+        "step0": { "cordon_active": false },
+        "step1": { "cordon_active": true },
+        "step2": { "cordon_active": true },
+        "action_required": "Enforce physical barricades at Lakdikapul Underpass",
+        "elevation_m": 516.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4690, 17.4040] }
+    },
+    {
+      "type": "Feature",
+      "id": "sec-pol-02",
+      "properties": {
+        "id": "sec-pol-02",
+        "station_id": "POL-02",
+        "name": "Panjagutta Traffic Police Division",
+        "sector": "emergency_services",
+        "sector_label": "Tactical Emergency Services & Public Safety",
+        "sub_category": "police_station",
+        "assigned_patrols": 22,
+        "step0": { "cordon_active": false },
+        "step1": { "cordon_active": false },
+        "step2": { "cordon_active": true },
+        "action_required": "Operate manual manual signals on Banjara Rd 1 Detour",
+        "elevation_m": 540.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4520, 17.4260] }
+    },
+    {
+      "type": "Feature",
+      "id": "sec-pol-03",
+      "properties": {
+        "id": "sec-pol-03",
+        "station_id": "POL-03",
+        "name": "Hyderabad Traffic Command Center (Nampally)",
+        "sector": "emergency_services",
+        "sector_label": "Tactical Emergency Services & Public Safety",
+        "sub_category": "police_station",
+        "assigned_patrols": 45,
+        "step0": { "cordon_active": false },
+        "step1": { "cordon_active": false },
+        "step2": { "cordon_active": true },
+        "action_required": "Broadcast digital dynamic messaging boards (VMS)",
+        "elevation_m": 520.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4740, 17.3990] }
+    },
+    {
+      "type": "Feature",
+      "id": "sec-shelter-01",
+      "properties": {
+        "id": "sec-shelter-01",
+        "shelter_id": "SHELTER-01",
+        "name": "Kotla Vijaya Bhaskara Reddy Indoor Stadium",
+        "sector": "emergency_services",
+        "sector_label": "Tactical Emergency Services & Public Safety",
+        "sub_category": "evacuation_shelter",
+        "bed_capacity": 1200,
+        "step0": { "current_occupancy": 0, "status": "STANDBY" },
+        "step1": { "current_occupancy": 180, "status": "ACTIVATED" },
+        "step2": { "current_occupancy": 640, "status": "ACTIVATED" },
+        "action_required": "Food distribution & emergency medical triage operating",
+        "elevation_m": 542.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4350, 17.4380] }
+    },
+    {
+      "type": "Feature",
+      "id": "sec-shelter-02",
+      "properties": {
+        "id": "sec-shelter-02",
+        "shelter_id": "SHELTER-02",
+        "name": "Red Rose Function Palace (Lakdikapul Shelter)",
+        "sector": "emergency_services",
+        "sector_label": "Tactical Emergency Services & Public Safety",
+        "sub_category": "evacuation_shelter",
+        "bed_capacity": 650,
+        "step0": { "current_occupancy": 0, "status": "STANDBY" },
+        "step1": { "current_occupancy": 220, "status": "ACTIVATED" },
+        "step2": { "current_occupancy": 650, "status": "FULL" },
+        "action_required": "Divert overflow citizens to Nizam College Grounds",
+        "elevation_m": 520.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4630, 17.4060] }
+    },
+    {
+      "type": "Feature",
+      "id": "sec-shelter-03",
+      "properties": {
+        "id": "sec-shelter-03",
+        "shelter_id": "SHELTER-03",
+        "name": "Nizam College Grounds Relief Pavilion",
+        "sector": "emergency_services",
+        "sector_label": "Tactical Emergency Services & Public Safety",
+        "sub_category": "evacuation_shelter",
+        "bed_capacity": 850,
+        "step0": { "current_occupancy": 0, "status": "STANDBY" },
+        "step1": { "current_occupancy": 95, "status": "STANDBY" },
+        "step2": { "current_occupancy": 310, "status": "ACTIVATED" },
+        "action_required": "Set up auxiliary DRF emergency tents",
+        "elevation_m": 521.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4730, 17.3980] }
+    },
+    {
+      "type": "Feature",
+      "id": "sec-shelter-04",
+      "properties": {
+        "id": "sec-shelter-04",
+        "shelter_id": "SHELTER-04",
+        "name": "GHMC Khairatabad Community Relief Hall",
+        "sector": "emergency_services",
+        "sector_label": "Tactical Emergency Services & Public Safety",
+        "sub_category": "evacuation_shelter",
+        "bed_capacity": 400,
+        "step0": { "current_occupancy": 0, "status": "STANDBY" },
+        "step1": { "current_occupancy": 110, "status": "ACTIVATED" },
+        "step2": { "current_occupancy": 380, "status": "ACTIVATED" },
+        "action_required": "Distribute clean drinking water sachets",
+        "elevation_m": 524.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4570, 17.4140] }
+    },
+    {
+      "type": "Feature",
+      "id": "pop-sch-01",
+      "properties": {
+        "id": "pop-sch-01",
+        "school_id": "SCH-01",
+        "name": "Hyderabad Public School (Begumpet)",
+        "sector": "vulnerable_populations",
+        "sector_label": "Vulnerable Populations & Sensitive Demographics",
+        "sub_category": "school",
+        "enrollment_count": 2800,
+        "step0": { "evacuation_status": "NORMAL" },
+        "step1": { "evacuation_status": "EARLY_DISMISSAL" },
+        "step2": { "evacuation_status": "SHELTERED_IN_PLACE", "notes": "620 boarders & staff safe on upper floors" },
+        "action_required": "School bus transit escorted via Begumpet Flyover",
+        "elevation_m": 530.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4680, 17.4420] }
+    },
+    {
+      "type": "Feature",
+      "id": "pop-sch-02",
+      "properties": {
+        "id": "pop-sch-02",
+        "school_id": "SCH-02",
+        "name": "St. George's Grammar School (Abids)",
+        "sector": "vulnerable_populations",
+        "sector_label": "Vulnerable Populations & Sensitive Demographics",
+        "sub_category": "school",
+        "enrollment_count": 1950,
+        "step0": { "evacuation_status": "NORMAL" },
+        "step1": { "evacuation_status": "EARLY_DISMISSAL" },
+        "step2": { "evacuation_status": "SHELTERED_IN_PLACE" },
+        "action_required": "Avoid low-lying Gunfoundry nala exit",
+        "elevation_m": 521.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4780, 17.3910] }
+    },
+    {
+      "type": "Feature",
+      "id": "pop-sch-03",
+      "properties": {
+        "id": "pop-sch-03",
+        "school_id": "SCH-03",
+        "name": "All Saints High School (Gunfoundry)",
+        "sector": "vulnerable_populations",
+        "sector_label": "Vulnerable Populations & Sensitive Demographics",
+        "sub_category": "school",
+        "enrollment_count": 1600,
+        "step0": { "evacuation_status": "NORMAL" },
+        "step1": { "evacuation_status": "EARLY_DISMISSAL" },
+        "step2": { "evacuation_status": "SHELTERED_IN_PLACE" },
+        "action_required": "Classrooms on 1st & 2nd floors secured",
+        "elevation_m": 519.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4790, 17.3940] }
+    },
+    {
+      "type": "Feature",
+      "id": "pop-snr-01",
+      "properties": {
+        "id": "pop-snr-01",
+        "facility_id": "SNR-01",
+        "name": "St. Mary’s Home for the Aged (Secunderabad)",
+        "sector": "vulnerable_populations",
+        "sector_label": "Vulnerable Populations & Sensitive Demographics",
+        "sub_category": "senior_care",
+        "bed_count": 140,
+        "step0": { "evacuation_priority": "HIGH" },
+        "step1": { "evacuation_priority": "HIGH" },
+        "step2": { "evacuation_priority": "HIGH" },
+        "action_required": "Emergency oxygen generators and backup power on standby",
+        "elevation_m": 538.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.5020, 17.4410] }
+    },
+    {
+      "type": "Feature",
+      "id": "pop-snr-02",
+      "properties": {
+        "id": "pop-snr-02",
+        "facility_id": "SNR-02",
+        "name": "Banjara Senior Living & Nursing Care",
+        "sector": "vulnerable_populations",
+        "sector_label": "Vulnerable Populations & Sensitive Demographics",
+        "sub_category": "senior_care",
+        "bed_count": 85,
+        "step0": { "evacuation_priority": "HIGH" },
+        "step1": { "evacuation_priority": "HIGH" },
+        "step2": { "evacuation_priority": "CRITICAL", "cause": "Slope runoff near perimeter wall" },
+        "action_required": "Ambulance priority escort assigned",
+        "elevation_m": 546.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4420, 17.4160] }
+    },
+    {
+      "type": "Feature",
+      "id": "tra-portal-01",
+      "properties": {
+        "id": "tra-portal-01",
+        "portal_id": "PORTAL-01",
+        "name": "Lakdikapul Metro Station Entrance B & Concourse",
+        "sector": "transport_bottlenecks",
+        "sector_label": "Transportation Bottlenecks & Tunnel Portals",
+        "sub_category": "metro_portal",
+        "step0": { "sump_water_level_m": 0.35, "flooding_hazard": "SAFE" },
+        "step1": { "sump_water_level_m": 1.85, "flooding_hazard": "AT_RISK" },
+        "step2": { "sump_water_level_m": 2.50, "flooding_hazard": "INUNDATED", "cascade_effect": "Power loss from Sub-02; escalators halted" },
+        "action_required": "Deploy portable flood barriers & seal underground subway entrance",
+        "elevation_m": 512.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4650, 17.4055] }
+    },
+    {
+      "type": "Feature",
+      "id": "tra-portal-02",
+      "properties": {
+        "id": "tra-portal-02",
+        "portal_id": "PORTAL-02",
+        "name": "MGBS Interchange Underground Concourse",
+        "sector": "transport_bottlenecks",
+        "sector_label": "Transportation Bottlenecks & Tunnel Portals",
+        "sub_category": "metro_portal",
+        "step0": { "sump_water_level_m": 0.20, "flooding_hazard": "SAFE" },
+        "step1": { "sump_water_level_m": 1.10, "flooding_hazard": "SAFE" },
+        "step2": { "sump_water_level_m": 1.95, "flooding_hazard": "AT_RISK" },
+        "action_required": "Activate sub-level dewatering sumps",
+        "elevation_m": 504.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4820, 17.3785] }
+    },
+    {
+      "type": "Feature",
+      "id": "tra-portal-03",
+      "properties": {
+        "id": "tra-portal-03",
+        "portal_id": "PORTAL-03",
+        "name": "Ameerpet Multi-Line Transit Hub",
+        "sector": "transport_bottlenecks",
+        "sector_label": "Transportation Bottlenecks & Tunnel Portals",
+        "sub_category": "metro_portal",
+        "step0": { "sump_water_level_m": 0.15, "flooding_hazard": "SAFE" },
+        "step1": { "sump_water_level_m": 0.40, "flooding_hazard": "SAFE" },
+        "step2": { "sump_water_level_m": 0.65, "flooding_hazard": "SAFE" },
+        "action_required": "Normal operational monitoring",
+        "elevation_m": 544.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4475, 17.4350] }
+    },
+    {
+      "type": "Feature",
+      "id": "tra-portal-04",
+      "properties": {
+        "id": "tra-portal-04",
+        "portal_id": "PORTAL-04",
+        "name": "Khairatabad Metro Station Entry Portal",
+        "sector": "transport_bottlenecks",
+        "sector_label": "Transportation Bottlenecks & Tunnel Portals",
+        "sub_category": "metro_portal",
+        "step0": { "sump_water_level_m": 0.25, "flooding_hazard": "SAFE" },
+        "step1": { "sump_water_level_m": 1.45, "flooding_hazard": "AT_RISK" },
+        "step2": { "sump_water_level_m": 2.30, "flooding_hazard": "INUNDATED" },
+        "action_required": "Restrict ground entrance; passengers to use elevated skywalk",
+        "elevation_m": 514.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4590, 17.4125] }
+    },
+    {
+      "type": "Feature",
+      "id": "tra-choke-01",
+      "properties": {
+        "id": "tra-choke-01",
+        "choke_id": "CHOKE-01",
+        "name": "Moosarambagh Causeway (Musi River)",
+        "sector": "transport_bottlenecks",
+        "sector_label": "Transportation Bottlenecks & Tunnel Portals",
+        "sub_category": "bridge_choke",
+        "clearance_height_m": 0.5,
+        "passable_lanes": "0 of 2 (SUBMERGED)",
+        "step0": { "status": "OPEN", "depth_m": 0.0 },
+        "step1": { "status": "WARNING", "depth_m": 0.35 },
+        "step2": { "status": "OVERTOPPED_CLOSED", "depth_m": 1.45 },
+        "action_required": "Total police barricade closure; divert traffic to Malakpet Flyover",
+        "elevation_m": 499.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.5080, 17.3720] }
+    },
+    {
+      "type": "Feature",
+      "id": "tra-choke-02",
+      "properties": {
+        "id": "tra-choke-02",
+        "choke_id": "CHOKE-02",
+        "name": "Chaderghat Low Bridge Causeway",
+        "sector": "transport_bottlenecks",
+        "sector_label": "Transportation Bottlenecks & Tunnel Portals",
+        "sub_category": "bridge_choke",
+        "clearance_height_m": 0.8,
+        "passable_lanes": "0 of 2 (CLOSED)",
+        "step0": { "status": "OPEN", "depth_m": 0.0 },
+        "step1": { "status": "WARNING", "depth_m": 0.25 },
+        "step2": { "status": "OVERTOPPED_CLOSED", "depth_m": 1.10 },
+        "action_required": "River flood level alarm triggered; barrier closed",
+        "elevation_m": 501.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4910, 17.3790] }
+    },
+    {
+      "type": "Feature",
+      "id": "tra-choke-03",
+      "properties": {
+        "id": "tra-choke-03",
+        "choke_id": "CHOKE-03",
+        "name": "PVNR Expressway Pillar 42 Underpass",
+        "sector": "transport_bottlenecks",
+        "sector_label": "Transportation Bottlenecks & Tunnel Portals",
+        "sub_category": "bridge_choke",
+        "clearance_height_m": 1.2,
+        "passable_lanes": "1 of 4 (WATERLOGGED)",
+        "step0": { "status": "OPEN", "depth_m": 0.05 },
+        "step1": { "status": "IMPEDED", "depth_m": 0.30 },
+        "step2": { "status": "PARTIALLY_BLOCKED", "depth_m": 0.65 },
+        "action_required": "Deploy portable dewatering pump truck",
+        "elevation_m": 508.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4450, 17.3750] }
+    },
+    {
+      "type": "Feature",
+      "id": "tra-choke-04",
+      "properties": {
+        "id": "tra-choke-04",
+        "choke_id": "CHOKE-04",
+        "name": "Raj Bhavan Road & Lakdikapul Underpass",
+        "sector": "transport_bottlenecks",
+        "sector_label": "Transportation Bottlenecks & Tunnel Portals",
+        "sub_category": "bridge_choke",
+        "clearance_height_m": 0.2,
+        "passable_lanes": "0 of 6 (SUBMERGED)",
+        "step0": { "status": "OPEN", "depth_m": 0.05 },
+        "step1": { "status": "IMPEDED", "depth_m": 0.38 },
+        "step2": { "status": "TOTAL_CUTOFF", "depth_m": 0.85 },
+        "action_required": "Activate Green Corridor Detour via Masab Tank Flyover",
+        "elevation_m": 512.0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4580, 17.4120] }
+    }
+  ]
+}

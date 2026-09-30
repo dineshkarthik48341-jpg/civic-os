@@ -1,0 +1,115 @@
+{
+  "type": "FeatureCollection",
+  "name": "Simulated IoT Storm Drain Telemetry Network",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "sensor-drain-14a",
+      "properties": {
+        "id": "sensor-drain-14a",
+        "code": "DRAIN-14A",
+        "name": "Lakdikapul Underpass Low-Sump Sensor",
+        "ward": "Ward 14 (Central)",
+        "sensor_type": "Ultrasonic Echo & Hydrostatic Pressure",
+        "max_capacity_m": 2.50,
+        "step0": { "depth_m": 0.40, "level_pct": 16, "status": "NORMAL", "flow_rate_lps": 42 },
+        "step1": { "depth_m": 1.95, "level_pct": 78, "status": "WARNING", "flow_rate_lps": 380 },
+        "step2": { "depth_m": 2.50, "level_pct": 100, "status": "OVERFLOW_CRITICAL", "flow_rate_lps": 650 },
+        "pump_assigned": false,
+        "recommended_pump_gpm": 1500
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4635, 17.4070] }
+    },
+    {
+      "type": "Feature",
+      "id": "sensor-drain-14b",
+      "properties": {
+        "id": "sensor-drain-14b",
+        "code": "DRAIN-14B",
+        "name": "Khairatabad Anand Nagar Primary Nala",
+        "ward": "Ward 14 (Khairatabad)",
+        "sensor_type": "Submersible Pressure Transducer",
+        "max_capacity_m": 3.00,
+        "step0": { "depth_m": 0.55, "level_pct": 18, "status": "NORMAL", "flow_rate_lps": 85 },
+        "step1": { "depth_m": 2.45, "level_pct": 82, "status": "WARNING", "flow_rate_lps": 720 },
+        "step2": { "depth_m": 3.00, "level_pct": 100, "status": "OVERFLOW_CRITICAL", "flow_rate_lps": 1150 },
+        "pump_assigned": false,
+        "recommended_pump_gpm": 1200
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4580, 17.4140] }
+    },
+    {
+      "type": "Feature",
+      "id": "sensor-drain-12c",
+      "properties": {
+        "id": "sensor-drain-12c",
+        "code": "DRAIN-12C",
+        "name": "Somajiguda Raj Bhavan Main Culvert",
+        "ward": "Ward 14 (Somajiguda)",
+        "sensor_type": "Optical Radar Level Gauge",
+        "max_capacity_m": 2.20,
+        "step0": { "depth_m": 0.30, "level_pct": 14, "status": "NORMAL", "flow_rate_lps": 30 },
+        "step1": { "depth_m": 1.45, "level_pct": 66, "status": "ELEVATED", "flow_rate_lps": 290 },
+        "step2": { "depth_m": 2.10, "level_pct": 95, "status": "CRITICAL", "flow_rate_lps": 510 },
+        "pump_assigned": false,
+        "recommended_pump_gpm": 800
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4535, 17.4205] }
+    },
+    {
+      "type": "Feature",
+      "id": "sensor-drain-09d",
+      "properties": {
+        "id": "sensor-drain-09d",
+        "code": "DRAIN-09D",
+        "name": "Musi Afzalgunj Outfall Sluice",
+        "ward": "Ward 09 (Charminar)",
+        "sensor_type": "Acoustic Doppler Velocity Meter",
+        "max_capacity_m": 3.50,
+        "step0": { "depth_m": 0.85, "level_pct": 24, "status": "NORMAL", "flow_rate_lps": 310 },
+        "step1": { "depth_m": 2.95, "level_pct": 84, "status": "WARNING", "flow_rate_lps": 1850 },
+        "step2": { "depth_m": 3.50, "level_pct": 100, "status": "OVERFLOW_CRITICAL", "flow_rate_lps": 3400 },
+        "pump_assigned": false,
+        "recommended_pump_gpm": 2500
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4790, 17.3775] }
+    },
+    {
+      "type": "Feature",
+      "id": "sensor-drain-07e",
+      "properties": {
+        "id": "sensor-drain-07e",
+        "code": "DRAIN-07E",
+        "name": "Banjara Hills Road #1 Elevated Ridge Culvert",
+        "ward": "Ward 12 (Banjara Hills)",
+        "sensor_type": "Ultrasonic Echo Level Gauge",
+        "max_capacity_m": 2.00,
+        "step0": { "depth_m": 0.20, "level_pct": 10, "status": "NORMAL", "flow_rate_lps": 22 },
+        "step1": { "depth_m": 0.80, "level_pct": 40, "status": "NORMAL", "flow_rate_lps": 110 },
+        "step2": { "depth_m": 1.05, "level_pct": 52, "status": "MODERATE", "flow_rate_lps": 195 },
+        "pump_assigned": false,
+        "recommended_pump_gpm": 0
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4485, 17.4140] }
+    },
+    {
+      "type": "Feature",
+      "id": "sensor-drain-15f",
+      "properties": {
+        "id": "sensor-drain-15f",
+        "code": "DRAIN-15F",
+        "name": "Hussain Sagar Surplus Discharge Weir",
+        "ward": "Ward 15 (Secunderabad/Tank Bund)",
+        "sensor_type": "Digital Staff Gauge & Weir Sensor",
+        "max_capacity_m": 4.00,
+        "step0": { "depth_m": 1.10, "level_pct": 27, "status": "NORMAL", "flow_rate_lps": 650 },
+        "step1": { "depth_m": 2.80, "level_pct": 70, "status": "ELEVATED", "flow_rate_lps": 1900 },
+        "step2": { "depth_m": 3.65, "level_pct": 91, "status": "HIGH_SURGE", "flow_rate_lps": 2800 },
+        "pump_assigned": false,
+        "recommended_pump_gpm": 1800
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4815, 17.4245] }
+    }
+  ]
+}

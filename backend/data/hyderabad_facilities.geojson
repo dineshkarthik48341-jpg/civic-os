@@ -1,0 +1,246 @@
+{
+  "type": "FeatureCollection",
+  "name": "Hyderabad Critical Infrastructure Nodes",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "fac-hosp-01",
+      "properties": {
+        "id": "fac-hosp-01",
+        "name": "Nizam's Institute of Medical Sciences (NIMS)",
+        "category": "hospital",
+        "type_label": "Level 1 Apex Trauma Center",
+        "ward": "Ward 14 (Central)",
+        "capacity": "1,450 Beds",
+        "icu_status": "Operational (42 ICU beds free)",
+        "flood_vulnerability": "High (Raj Bhavan Approach Severed)",
+        "contact": "+91 40 2348 9000",
+        "elevation_m": 536.0,
+        "is_critical": true
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4520, 17.4230] }
+    },
+    {
+      "type": "Feature",
+      "id": "fac-hosp-02",
+      "properties": {
+        "id": "fac-hosp-02",
+        "name": "Osmania General Hospital",
+        "category": "hospital",
+        "type_label": "Public Teaching & Trauma Hospital",
+        "ward": "Ward 09 (Charminar/Afzalgunj)",
+        "capacity": "1,168 Beds",
+        "icu_status": "Basement Flooding Alert (Generator at risk)",
+        "flood_vulnerability": "Severe (Musi River Influx Cutoff)",
+        "contact": "+91 40 2460 0146",
+        "elevation_m": 505.0,
+        "is_critical": true
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4795, 17.3780] }
+    },
+    {
+      "type": "Feature",
+      "id": "fac-hosp-03",
+      "properties": {
+        "id": "fac-hosp-03",
+        "name": "Care Hospitals - Banjara Hills",
+        "category": "hospital",
+        "type_label": "Multi-Specialty Emergency Hospital",
+        "ward": "Ward 12 (Banjara Hills)",
+        "capacity": "435 Beds",
+        "icu_status": "Operational (Green Detour Primary Receiver)",
+        "flood_vulnerability": "Low (Elevated Ridge)",
+        "contact": "+91 40 6165 6565",
+        "elevation_m": 548.0,
+        "is_critical": false
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4485, 17.4147] }
+    },
+    {
+      "type": "Feature",
+      "id": "fac-hosp-04",
+      "properties": {
+        "id": "fac-hosp-04",
+        "name": "Gandhi Hospital & Emergency Ward",
+        "category": "hospital",
+        "type_label": "Tertiary Referral Hospital",
+        "ward": "Ward 17 (Musheerabad)",
+        "capacity": "1,200 Beds",
+        "icu_status": "Operational (Relief Buffer Hospital)",
+        "flood_vulnerability": "Low",
+        "contact": "+91 40 2750 5566",
+        "elevation_m": 530.0,
+        "is_critical": false
+      },
+      "geometry": { "type": "Point", "coordinates": [78.5050, 17.4412] }
+    },
+    {
+      "type": "Feature",
+      "id": "fac-hosp-05",
+      "properties": {
+        "id": "fac-hosp-05",
+        "name": "Medicover Hospital - Secretariat / Saifabad",
+        "category": "hospital",
+        "type_label": "Emergency Care Center",
+        "ward": "Ward 14 (Khairatabad)",
+        "capacity": "250 Beds",
+        "icu_status": "Emergency Standby",
+        "flood_vulnerability": "Moderate (Buffer Risk)",
+        "contact": "+91 40 6833 4455",
+        "elevation_m": 516.0,
+        "is_critical": true
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4680, 17.4080] }
+    },
+    {
+      "type": "Feature",
+      "id": "fac-metro-01",
+      "properties": {
+        "id": "fac-metro-01",
+        "name": "Lakdikapul Metro Station",
+        "category": "metro",
+        "type_label": "Red Line Rapid Transit Station",
+        "ward": "Ward 14 (Central)",
+        "daily_ridership": "38,000",
+        "operational_status": "Entry B Inundated / Concourse Open",
+        "flood_vulnerability": "Critical (Underpass Sump Overflow)",
+        "platform_level": "Elevated (Safe Haven)",
+        "is_critical": true
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4650, 17.4055] }
+    },
+    {
+      "type": "Feature",
+      "id": "fac-metro-02",
+      "properties": {
+        "id": "fac-metro-02",
+        "name": "Khairatabad Metro Station",
+        "category": "metro",
+        "type_label": "Red Line Rapid Transit Station",
+        "ward": "Ward 14 (Khairatabad)",
+        "daily_ridership": "42,000",
+        "operational_status": "Ground Concourse Waterlogged (0.35m)",
+        "flood_vulnerability": "Severe",
+        "platform_level": "Elevated (Safe Haven)",
+        "is_critical": true
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4590, 17.4125] }
+    },
+    {
+      "type": "Feature",
+      "id": "fac-metro-03",
+      "properties": {
+        "id": "fac-metro-03",
+        "name": "MGBS Interchange Metro Station",
+        "category": "metro",
+        "type_label": "Red & Green Dual-Line Mega Hub",
+        "ward": "Ward 09 (Charminar)",
+        "daily_ridership": "85,000",
+        "operational_status": "Operational (Sub-level Flood Gate Armed)",
+        "flood_vulnerability": "High (Musi Overflow Buffer)",
+        "platform_level": "Elevated",
+        "is_critical": true
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4820, 17.3785] }
+    },
+    {
+      "type": "Feature",
+      "id": "fac-metro-04",
+      "properties": {
+        "id": "fac-metro-04",
+        "name": "Ameerpet Metro Interchange",
+        "category": "metro",
+        "type_label": "Red & Blue Dual-Line Hub",
+        "ward": "Ward 15 (Ameerpet)",
+        "daily_ridership": "95,000",
+        "operational_status": "100% Operational (Clear)",
+        "flood_vulnerability": "Minimal",
+        "platform_level": "Elevated",
+        "is_critical": false
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4475, 17.4350] }
+    },
+    {
+      "type": "Feature",
+      "id": "fac-metro-05",
+      "properties": {
+        "id": "fac-metro-05",
+        "name": "Assembly Metro Station",
+        "category": "metro",
+        "type_label": "Red Line Transit Station",
+        "ward": "Ward 14 (Central)",
+        "daily_ridership": "26,000",
+        "operational_status": "Operational with Access Diverted",
+        "flood_vulnerability": "Moderate",
+        "platform_level": "Elevated",
+        "is_critical": false
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4710, 17.3995] }
+    },
+    {
+      "type": "Feature",
+      "id": "fac-mall-01",
+      "properties": {
+        "id": "fac-mall-01",
+        "name": "City Centre Mall",
+        "category": "mall",
+        "type_label": "High-Density Commercial Hub",
+        "ward": "Ward 12 (Banjara Hills)",
+        "occupancy_est": "3,400 visitors",
+        "basement_pumps": "2 Active",
+        "flood_vulnerability": "Low",
+        "is_critical": false
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4480, 17.4180] }
+    },
+    {
+      "type": "Feature",
+      "id": "fac-mall-02",
+      "properties": {
+        "id": "fac-mall-02",
+        "name": "Next Galleria Mall - Punjagutta",
+        "category": "mall",
+        "type_label": "Transit-Connected Commercial Hub",
+        "ward": "Ward 14 (Punjagutta)",
+        "occupancy_est": "5,100 visitors",
+        "basement_pumps": "Automatic Sump Engaged",
+        "flood_vulnerability": "Moderate (Ground Concourse Waterlogged)",
+        "is_critical": true
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4510, 17.4260] }
+    },
+    {
+      "type": "Feature",
+      "id": "fac-mall-03",
+      "properties": {
+        "id": "fac-mall-03",
+        "name": "GVK One Mall",
+        "category": "mall",
+        "type_label": "Commercial & Entertainment Complex",
+        "ward": "Ward 12 (Banjara Hills)",
+        "occupancy_est": "4,200 visitors",
+        "basement_pumps": "Normal",
+        "flood_vulnerability": "Low",
+        "is_critical": false
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4470, 17.4195] }
+    },
+    {
+      "type": "Feature",
+      "id": "fac-mall-04",
+      "properties": {
+        "id": "fac-mall-04",
+        "name": "Mozamjahi Historic Gathering Market",
+        "category": "mall",
+        "type_label": "Dense Market & Pedestrian Precinct",
+        "ward": "Ward 10 (Abids/Mozamjahi)",
+        "occupancy_est": "6,500 citizens",
+        "basement_pumps": "None (Heritage Masonry)",
+        "flood_vulnerability": "Severe (Water pooling 0.40m)",
+        "is_critical": true
+      },
+      "geometry": { "type": "Point", "coordinates": [78.4740, 17.3860] }
+    }
+  ]
+}
